@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="ProductSurvey" transaction-type="JTA">
+        <jta-data-source>ProductSurvey</jta-data-source>
+        <class>com.db2.productsurvey.entities.Product</class>
+        <class>com.db2.productsurvey.entities.Response</class>
+        <class>com.db2.productsurvey.entities.Answer</class>
+        <class>com.db2.productsurvey.entities.Question</class>
+        <class>com.db2.productsurvey.entities.Questionnaire</class>
+        <class>com.db2.productsurvey.entities.OffensiveWord</class>
+        <class>com.db2.productsurvey.entities.SimpleUser</class>
+        <class>com.db2.productsurvey.entities.Answer</class>
+        <class>com.db2.productsurvey.entities.Admin</class>
+        <class>com.db2.productsurvey.entities.User</class>
+        <properties>
+            <property name="jakarta.persistence.schema-generation.database.action" value="create"/>
+            <property name="eclipselink.ddl-generation" value="create-tables"/>
+            <property name="eclipselink.ddl-generation.output-mode" value="database"/>
+        </properties>
+    </persistence-unit>
+</persistence>

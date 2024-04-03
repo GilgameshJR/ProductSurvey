@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>0d84ef95-54ac-4722-b8f0-0281b88c3de6.SCHEMA:productsurvey</OriginalElement>
+  <nodes>
+    <node x="1419.3076923076924" y="354.0">0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.review</node>
+    <node x="272.0" y="118.0">0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.response</node>
+    <node x="1304.0" y="73.0">0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.offensiveword</node>
+    <node x="843.3461538461538" y="183.0">0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.question</node>
+    <node x="570.1730769230769" y="156.0">0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.answer</node>
+    <node x="1180.826923076923" y="199.0">0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.questionnaire</node>
+    <node x="1436.3076923076924" y="191.0">0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.product</node>
+    <node x="1883.0" y="-44.0">0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.sequence</node>
+    <node x="591.1730769230769" y="-16.0">0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.opening</node>
+    <node x="48.326923076923094" y="140.0">0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.user</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.response" target="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.user" relationship="REFERENCES">
+      <point x="41.5" y="-105.5" />
+      <point x="396.5" y="316.0" />
+      <point x="132.8269230769231" y="316.0" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.response" target="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.questionnaire" relationship="REFERENCES">
+      <point x="-41.5" y="-105.5" />
+      <point x="313.5" y="404.0" />
+      <point x="1242.826923076923" y="404.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.opening" target="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.questionnaire" relationship="REFERENCES">
+      <point x="101.0" y="0.0" />
+      <point x="1227.826923076923" y="45.5" />
+      <point x="-15.0" y="-50.5" />
+    </edge>
+    <edge source="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.questionnaire" target="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.product" relationship="REFERENCES">
+      <point x="0.0" y="-50.5" />
+      <point x="1242.826923076923" y="233.5" />
+      <point x="1504.8076923076924" y="233.5" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.answer" target="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.response" relationship="REFERENCES">
+      <point x="35.25" y="-61.5" />
+      <point x="675.9230769230769" y="223.5" />
+      <point x="355.0" y="223.5" />
+      <point x="0.0" y="105.5" />
+    </edge>
+    <edge source="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.review" target="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.product" relationship="REFERENCES">
+      <point x="0.0" y="-61.5" />
+      <point x="1496.3076923076924" y="292.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.answer" target="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.question" relationship="REFERENCES">
+      <point x="-35.25" y="-61.5" />
+      <point x="605.4230769230769" y="233.5" />
+      <point x="926.3461538461538" y="233.5" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.question" target="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.questionnaire" relationship="REFERENCES">
+      <point x="0.0" y="-50.5" />
+      <point x="926.3461538461538" y="284.0" />
+      <point x="1185.5" y="284.0" />
+      <point x="1185.5" y="300.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.opening" target="0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.user" relationship="REFERENCES">
+      <point x="-101.0" y="0.0" />
+      <point x="132.8269230769231" y="45.5" />
+      <point x="0.0" y="-72.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="822.0" y="415.5" />
+  <SelectedNodes>
+    <node>0d84ef95-54ac-4722-b8f0-0281b88c3de6.TABLE:productsurvey.offensiveword</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+
